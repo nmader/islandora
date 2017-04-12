@@ -116,9 +116,9 @@ function template_preprocess_islandora_default_edit(array &$variables) {
 }
 
 /**
- * Implements hook_preprocess_theme().
+ * Implements template_preprocess_theme().
  */
-function islandora_preprocess_islandora_default(&$variables) {
+function template_preprocess_islandora_default(&$variables) {
   drupal_add_js('misc/form.js');
   drupal_add_js('misc/collapse.js');
   $islandora_object = $variables['islandora_object'];
