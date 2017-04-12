@@ -6,9 +6,9 @@
  */
 
 /**
- * Implements hook_preprocess_theme().
+ * Implements template_preprocess_hook().
  */
-function islandora_preprocess_islandora_default_edit(array &$variables) {
+function template_preprocess_islandora_default_edit(array &$variables) {
   global $base_url;
   $islandora_object = $variables['islandora_object'];
   $datastreams = array();
