@@ -170,9 +170,9 @@ function template_preprocess_islandora_default(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_theme().
+ * Implements template_preprocess_theme().
  */
-function islandora_preprocess_islandora_object_print(array &$variables) {
+function template_preprocess_islandora_object_print(array &$variables) {
   // Apply the print CSS in non print context.
   $only_print_media = function($o) {
     return $o['media'] == 'print';
