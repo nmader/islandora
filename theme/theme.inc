@@ -6,7 +6,7 @@
  */
 
 /**
- * Implements template_preprocess_Hook().
+ * Implements template_preprocess_HOOK().
  */
 function template_preprocess_islandora_default_edit(array &$variables) {
   global $base_url;
@@ -116,7 +116,7 @@ function template_preprocess_islandora_default_edit(array &$variables) {
 }
 
 /**
- * Implements template_preprocess_Hook().
+ * Implements template_preprocess_HOOK().
  */
 function template_preprocess_islandora_default(&$variables) {
   drupal_add_js('misc/form.js');
@@ -170,7 +170,7 @@ function template_preprocess_islandora_default(&$variables) {
 }
 
 /**
- * Implements template_preprocess_Hook().
+ * Implements template_preprocess_HOOK().
  */
 function template_preprocess_islandora_object_print(array &$variables) {
   // Apply the print CSS in non print context.
