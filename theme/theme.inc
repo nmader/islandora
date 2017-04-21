@@ -623,9 +623,9 @@ function theme_islandora_datastream_regenerate_link(array $vars) {
 }
 
 /**
- * Implements hook_preprocess().
+ * Implements template_preprocess_HOOK().
  */
-function islandora_preprocess_islandora_dublin_core_display(array &$variables) {
+function template_preprocess_islandora_dublin_core_display(array &$variables) {
   $islandora_object = $variables['islandora_object'];
   if (islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $islandora_object['DC'])) {
     try {
