@@ -660,9 +660,9 @@ function template_preprocess_islandora_dublin_core_description(array &$variables
 }
 
 /**
- * Implements hook_preprocess().
+ * Implements template_preprocess_HOOK().
  */
-function islandora_preprocess_islandora_object_overview(array &$variables) {
+function template_preprocess_islandora_object_overview(array &$variables) {
   $object = $variables['islandora_object'];
   $cmodels = $object->models;
   $links = array();
